@@ -1,0 +1,37 @@
+[4.936s] Invoking command in '/home/ioteam/Aro-Robot/src/aro_camera_publisher': PYTHONPATH=/home/ioteam/Aro-Robot/build/aro_camera_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ioteam/Aro-Robot/install/aro_camera_publisher/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/aro_camera_publisher build --build-base /home/ioteam/Aro-Robot/build/aro_camera_publisher/build install --record /home/ioteam/Aro-Robot/build/aro_camera_publisher/install.log --single-version-externally-managed install_data
+[6.128s] running egg_info
+[6.129s] creating ../../build/aro_camera_publisher/aro_camera_publisher.egg-info
+[6.218s] writing ../../build/aro_camera_publisher/aro_camera_publisher.egg-info/PKG-INFO
+[6.219s] writing dependency_links to ../../build/aro_camera_publisher/aro_camera_publisher.egg-info/dependency_links.txt
+[6.220s] writing entry points to ../../build/aro_camera_publisher/aro_camera_publisher.egg-info/entry_points.txt
+[6.221s] writing requirements to ../../build/aro_camera_publisher/aro_camera_publisher.egg-info/requires.txt
+[6.221s] writing top-level names to ../../build/aro_camera_publisher/aro_camera_publisher.egg-info/top_level.txt
+[6.222s] writing manifest file '../../build/aro_camera_publisher/aro_camera_publisher.egg-info/SOURCES.txt'
+[6.429s] reading manifest file '../../build/aro_camera_publisher/aro_camera_publisher.egg-info/SOURCES.txt'
+[6.432s] writing manifest file '../../build/aro_camera_publisher/aro_camera_publisher.egg-info/SOURCES.txt'
+[6.432s] running build
+[6.433s] running build_py
+[6.434s] creating /home/ioteam/Aro-Robot/build/aro_camera_publisher/build
+[6.434s] creating /home/ioteam/Aro-Robot/build/aro_camera_publisher/build/lib
+[6.435s] creating /home/ioteam/Aro-Robot/build/aro_camera_publisher/build/lib/aro_camera_publisher
+[6.435s] copying aro_camera_publisher/camera_publisher_node.py -> /home/ioteam/Aro-Robot/build/aro_camera_publisher/build/lib/aro_camera_publisher
+[6.436s] copying aro_camera_publisher/__init__.py -> /home/ioteam/Aro-Robot/build/aro_camera_publisher/build/lib/aro_camera_publisher
+[6.437s] running install
+[6.461s] running install_lib
+[6.552s] creating /home/ioteam/Aro-Robot/install/aro_camera_publisher/lib/python3.12/site-packages/aro_camera_publisher
+[6.552s] copying /home/ioteam/Aro-Robot/build/aro_camera_publisher/build/lib/aro_camera_publisher/camera_publisher_node.py -> /home/ioteam/Aro-Robot/install/aro_camera_publisher/lib/python3.12/site-packages/aro_camera_publisher
+[6.553s] copying /home/ioteam/Aro-Robot/build/aro_camera_publisher/build/lib/aro_camera_publisher/__init__.py -> /home/ioteam/Aro-Robot/install/aro_camera_publisher/lib/python3.12/site-packages/aro_camera_publisher
+[6.556s] byte-compiling /home/ioteam/Aro-Robot/install/aro_camera_publisher/lib/python3.12/site-packages/aro_camera_publisher/camera_publisher_node.py to camera_publisher_node.cpython-312.pyc
+[6.560s] byte-compiling /home/ioteam/Aro-Robot/install/aro_camera_publisher/lib/python3.12/site-packages/aro_camera_publisher/__init__.py to __init__.cpython-312.pyc
+[6.561s] running install_data
+[6.561s] creating /home/ioteam/Aro-Robot/install/aro_camera_publisher/share/ament_index
+[6.562s] creating /home/ioteam/Aro-Robot/install/aro_camera_publisher/share/ament_index/resource_index
+[6.563s] creating /home/ioteam/Aro-Robot/install/aro_camera_publisher/share/ament_index/resource_index/packages
+[6.563s] copying resource/aro_camera_publisher -> /home/ioteam/Aro-Robot/install/aro_camera_publisher/share/ament_index/resource_index/packages
+[6.564s] copying package.xml -> /home/ioteam/Aro-Robot/install/aro_camera_publisher/share/aro_camera_publisher
+[6.565s] running install_egg_info
+[6.672s] Copying ../../build/aro_camera_publisher/aro_camera_publisher.egg-info to /home/ioteam/Aro-Robot/install/aro_camera_publisher/lib/python3.12/site-packages/aro_camera_publisher-0.0.0-py3.12.egg-info
+[6.677s] running install_scripts
+[7.332s] Installing camera_publisher_node script to /home/ioteam/Aro-Robot/install/aro_camera_publisher/lib/aro_camera_publisher
+[7.333s] writing list of installed files to '/home/ioteam/Aro-Robot/build/aro_camera_publisher/install.log'
+[7.483s] Invoked command in '/home/ioteam/Aro-Robot/src/aro_camera_publisher' returned '0': PYTHONPATH=/home/ioteam/Aro-Robot/build/aro_camera_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ioteam/Aro-Robot/install/aro_camera_publisher/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/aro_camera_publisher build --build-base /home/ioteam/Aro-Robot/build/aro_camera_publisher/build install --record /home/ioteam/Aro-Robot/build/aro_camera_publisher/install.log --single-version-externally-managed install_data

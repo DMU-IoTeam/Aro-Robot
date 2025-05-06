@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/aro_camera_publisher/aro_camera_publisher.egg-info
+writing ../../build/aro_camera_publisher/aro_camera_publisher.egg-info/PKG-INFO
+writing dependency_links to ../../build/aro_camera_publisher/aro_camera_publisher.egg-info/dependency_links.txt
+writing entry points to ../../build/aro_camera_publisher/aro_camera_publisher.egg-info/entry_points.txt
+writing requirements to ../../build/aro_camera_publisher/aro_camera_publisher.egg-info/requires.txt
+writing top-level names to ../../build/aro_camera_publisher/aro_camera_publisher.egg-info/top_level.txt
+writing manifest file '../../build/aro_camera_publisher/aro_camera_publisher.egg-info/SOURCES.txt'
+reading manifest file '../../build/aro_camera_publisher/aro_camera_publisher.egg-info/SOURCES.txt'
+writing manifest file '../../build/aro_camera_publisher/aro_camera_publisher.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ioteam/Aro-Robot/build/aro_camera_publisher/build
+creating /home/ioteam/Aro-Robot/build/aro_camera_publisher/build/lib
+creating /home/ioteam/Aro-Robot/build/aro_camera_publisher/build/lib/aro_camera_publisher
+copying aro_camera_publisher/camera_publisher_node.py -> /home/ioteam/Aro-Robot/build/aro_camera_publisher/build/lib/aro_camera_publisher
+copying aro_camera_publisher/__init__.py -> /home/ioteam/Aro-Robot/build/aro_camera_publisher/build/lib/aro_camera_publisher
+running install
+running install_lib
+creating /home/ioteam/Aro-Robot/install/aro_camera_publisher/lib/python3.12/site-packages/aro_camera_publisher
+copying /home/ioteam/Aro-Robot/build/aro_camera_publisher/build/lib/aro_camera_publisher/camera_publisher_node.py -> /home/ioteam/Aro-Robot/install/aro_camera_publisher/lib/python3.12/site-packages/aro_camera_publisher
+copying /home/ioteam/Aro-Robot/build/aro_camera_publisher/build/lib/aro_camera_publisher/__init__.py -> /home/ioteam/Aro-Robot/install/aro_camera_publisher/lib/python3.12/site-packages/aro_camera_publisher
+byte-compiling /home/ioteam/Aro-Robot/install/aro_camera_publisher/lib/python3.12/site-packages/aro_camera_publisher/camera_publisher_node.py to camera_publisher_node.cpython-312.pyc
+byte-compiling /home/ioteam/Aro-Robot/install/aro_camera_publisher/lib/python3.12/site-packages/aro_camera_publisher/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/ioteam/Aro-Robot/install/aro_camera_publisher/share/ament_index
+creating /home/ioteam/Aro-Robot/install/aro_camera_publisher/share/ament_index/resource_index
+creating /home/ioteam/Aro-Robot/install/aro_camera_publisher/share/ament_index/resource_index/packages
+copying resource/aro_camera_publisher -> /home/ioteam/Aro-Robot/install/aro_camera_publisher/share/ament_index/resource_index/packages
+copying package.xml -> /home/ioteam/Aro-Robot/install/aro_camera_publisher/share/aro_camera_publisher
+running install_egg_info
+Copying ../../build/aro_camera_publisher/aro_camera_publisher.egg-info to /home/ioteam/Aro-Robot/install/aro_camera_publisher/lib/python3.12/site-packages/aro_camera_publisher-0.0.0-py3.12.egg-info
+running install_scripts
+Installing camera_publisher_node script to /home/ioteam/Aro-Robot/install/aro_camera_publisher/lib/aro_camera_publisher
+writing list of installed files to '/home/ioteam/Aro-Robot/build/aro_camera_publisher/install.log'
