@@ -1,6 +1,6 @@
 # Aro-Robot ROS 2 Workspace 🚀
 
-> Raspberry Pi와 WSL 2 간 WebSocket 브릿지 & V-SLAM 데모
+Raspberry Pi와 WSL 2 간 WebSocket 브릿지 & V-SLAM 데모
 
 
 | Host | OS / ROS | 비고 |
