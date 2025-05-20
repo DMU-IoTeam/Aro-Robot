@@ -1,11 +1,13 @@
 import os, threading
 import rclpy, roslibpy
+import base64
 from rclpy.node import Node
-from std_msgs.msg import String
+from std_msgs.msg import Header
+from sensor_msgs.msg import Image
 
 DEFAULT_PI_IP = os.getenv('PI_IP', '100.64.163.104')
-R_TOPIC = '/test_string'
-L_TOPIC = '/remote_pi/test_string'
+R_TOPIC = "/camera/image_raw"
+L_TOPIC = "/remote_pi/camera/image_raw"
 
 class Bridge(Node):
     def __init__(self):
@@ -15,7 +17,7 @@ class Bridge(Node):
         self.get_logger().info(f"Connecting to Pi rosbridge @ {pi_ip}:9090")
 
         # local publisher
-        self.pub = self.create_publisher(String, L_TOPIC, 10)
+        self.pub = self.create_publisher(Image, L_TOPIC, 10)
 
         # roslibpy client
         self.client = roslibpy.Ros(pi_ip, 9090)
@@ -23,14 +25,44 @@ class Bridge(Node):
 
 
     def _on_ready(self):
-        sub = roslibpy.Topic(self.client, R_TOPIC, 'std_msgs/msg/String')
-        sub.subscribe(lambda m: self._forward(m['data']))
+        self.get_logger().info("roslibpy ready ✅")
+        sub = roslibpy.Topic(
+            self.client, R_TOPIC,
+            'sensor_msgs/msg/Image',
+            queue_length=1,
+            throttle_rate=0,
+            compression='none'
+        )
+        sub.subscribe(self._forward)
         self.get_logger().info(f"Subscribed to remote {R_TOPIC}")
 
-    def _forward(self, text):
-        msg = String(); msg.data = text
-        self.pub.publish(msg)
-        self.get_logger().info(f'forward ▶ {text}')
+    def _forward(self, msg_dict):
+        try:
+            img = Image()
+            img.header = Header()
+            img.header.stamp = self.get_clock().now().to_msg()
+            img.header.frame_id = "remote_camera"
+
+            img.height       = msg_dict["height"]
+            img.width        = msg_dict["width"]
+            img.encoding     = msg_dict["encoding"]
+            img.is_bigendian = msg_dict["is_bigendian"]
+            img.step         = msg_dict["step"]
+
+            # --- data 변환 (Base-64 → bytes) ---
+            raw = msg_dict["data"]
+            if isinstance(raw, str):        # 표준 rosbridge 형식
+                img.data = base64.b64decode(raw)
+            else:                           # list[int] fallback
+                img.data = bytes(raw)
+
+            self.pub.publish(img)
+            self.get_logger().info(
+                f"forward ▶ {img.width}×{img.height} ({len(img.data)} B)"
+            )
+
+        except Exception as e:
+            self.get_logger().error(f"Image forward error: {e}")
 
 def main():
     rclpy.init()
