@@ -1,0 +1,26 @@
+Camera:
+  name: demo_mono
+  setup: monocular
+  model: perspective
+  fx: 520.0
+  fy: 520.0
+  cx: 320.0
+  cy: 240.0
+  k1: 0.0
+  k2: 0.0
+  p1: 0.0
+  p2: 0.0
+  k3: 0.0
+  fps: 30.0
+  cols: 640
+  rows: 480
+  color_order: BGR
+Feature:
+  scale_factor: 1.2
+  num_levels: 8
+  ini_fast_threshold: 12
+  min_fast_threshold: 5
+  max_num_keypoints: 2000
+SocketPublisher:
+  enabled: true
+  server_uri: "http://host.docker.internal:3000"

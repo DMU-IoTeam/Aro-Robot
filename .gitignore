@@ -55,3 +55,11 @@ CATKIN_IGNORE
 # Temporary test files
 simple_ws_server.py
 simple_ws_client.py
+
+# Media and Data Files
+*.mp4
+*.avi
+*.msg
+*.fbow
+*.db
+*.png
